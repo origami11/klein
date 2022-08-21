@@ -1,0 +1,9 @@
+{% macro hello(name) %}
+    <em>hello, {{ name }} {{! name }}<em>
+{% endmacro %}
+
+<div>
+{% for name in names %}
+    {{ hello(name) }}
+{% endfor %}
+</div>

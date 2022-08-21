@@ -1,0 +1,12 @@
+{
+    "name": "origami11/klein",
+    "description": "simple template engine",
+    "license": "MIT",
+    "authors": [],
+    "autoload": {
+       "psr-0": {
+            "Klein": ""
+        }
+    },
+    "require": {}
+}

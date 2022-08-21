@@ -1,0 +1,18 @@
+
+<h1>{{ pagename|title }}</h1>
+<ul>
+{% for author in authors %}
+  <li {% if loop.first %}class="first"{% endif %}{% if loop.last %}class="last"{% endif %}>
+    <div class="name">{{ author.name }}</div>
+    <div class="age">{{ author.age }}</div>
+  </li>
+{% endfor %}
+
+
+{% for key, value in city %}
+  <li>
+    <div class="value">{{ value }}</div>
+    <div class="key">{{ key }}</div>
+  </li>
+{% endfor %}
+</ul>
